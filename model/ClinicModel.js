@@ -1,38 +1,40 @@
 const Sequelize = require('sequelize')
-const connection = require('../database')
+const connection = require('../database/database')
 
 const ClinicModel = connection.define(
-    'tbl_paciente',
+    'tbl_pacientes',
     {
         cod_paciente:{
             type:Sequelize.INTEGER(10),
             primaryKey:true,
-            autoIncrement:true
+            autoIncrement:true,
+            allowNull:false
         }, 
         nome_paciente:{
             type: Sequelize.STRING(500),
-            allowNull:true
+            allowNull:false
         },
         telefone_paciente:{
             type: Sequelize.STRING(10),
-            allowNull:true
+            allowNull:false
         },
         celular_paciente:{
             type: Sequelize.STRING(11),
-            allowNull:true
+            allowNull:false
         },
         email_paciente:{
             type: Sequelize.STRING(100),
-            allowNull:true
+            allowNull:false
         },
         nome_responsavel:{
             type: Sequelize.STRING(500),
+            allowNull:true
         },
         telefone_responsavel:{
-            type: Sequelize.STRING(500),
+            type: Sequelize.STRING(10),
+            allowNull:true
         }
 
-    }
-)
+    })
 
-module.exports = ClinicModel
+module.exports = ClinicModel;
