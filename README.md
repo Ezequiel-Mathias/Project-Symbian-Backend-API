@@ -8,7 +8,7 @@
 
 - NodeJs (Versão LTS)
 
-### É necessário fazer
+### É necessário fazer:
 
 - #### Criar um database no Workbench Mysql com o nome de dbprojectsybiamclinic, crie com o seguinte comando:
 ```
