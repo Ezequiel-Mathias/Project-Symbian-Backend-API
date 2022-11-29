@@ -45,10 +45,6 @@ npm start
 node index.js
 ```
 
-- #### Acesse meu postman para testar melhor o caminho das APIS
-
-https://app.getpostman.com/join-team?invite_code=7ab041bac66ab2edb65bb30fad88bd90&target_code=87d799970239c271e0882196597fdcd8
-
 
 
 
